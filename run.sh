@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cat << EOS > server.js
-console.log("Server started");
+console.log("WebSocket Server started");
 var Msg = '';
 var WebSocketServer = require('ws').Server
     , wss = new WebSocketServer({port: 8010});
