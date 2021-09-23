@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: "gatewaybvtsaks2-3e89"
+    labels:
+        app: "gatewaybvtsaks2-3e89"
+spec:
+    type: LoadBalancer
+    ports:
+    - port: 8010
+      targetPort: 8010
+      protocol: TCP
+      name: http
+    selector:
+        app: "gatewaybvtsaks2-3e89"
