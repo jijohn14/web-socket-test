@@ -8,7 +8,7 @@ var WebSocketServer = require('ws').Server
     wss.on('connection', function(ws) {
         ws.on('message', function(message) {
         console.log('Received from client: %s', message);
-        ws.send('Server received from client: ' + message);
+        ws.send(message);
     });
  });
 EOS
